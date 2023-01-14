@@ -1,0 +1,217 @@
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lora:wght@400;500&display=swap');
+     :root {
+        --heading-color: #fff;
+        --text-color: #C6C6C6;
+        --btn-color: #4BAB73;
+        --border-color: #4BAB73;
+        --img-bg: #4C4C4C;
+        --body-color: #131313;
+        --lora-font: 'Lora', serif;
+        --cinzel-font: 'Cinzel', serif;
+        ;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+    
+    body {
+        font-family: 'Cinzel', serif;
+        font-family: 'Lora', serif;
+        background-color: var(--body-color);
+        padding: 0 3rem;
+    }
+    
+    section {
+        position: relative;
+        padding: 3rem 3rem;
+    }
+    
+    .container {
+        padding: 1rem 2rem;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 6rem;
+        color: var(--heading-color);
+        font-weight: 300;
+        font-family: var(--cinzel-font);
+    }
+    
+    h2 {
+        font-size: 3rem;
+        color: var(--heading-color);
+    }
+    
+    p {
+        font-size: 1.25rem;
+        color: var(--text-color);
+        font-weight: normal;
+        font-family: var(--lora-font);
+        padding-bottom: 1rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--heading-color);
+        font-size: 1rem;
+        font-weight: bold;
+        border: 2px solid var(--border-color);
+        border-radius: 6px;
+        padding: 1rem;
+        transition: .3s ease-in-out;
+    }
+    
+    a:hover {
+        background-color: var(--btn-color);
+    }
+    /*===================Home===============*/
+    
+    .green {
+        position: absolute;
+        right: 65px;
+        top: 0;
+        background-color: #4BAB73;
+        z-index: 44;
+        width: 135px;
+        height: 750px;
+        opacity: .3;
+    }
+    
+    .home-img {
+        position: absolute;
+    }
+    
+    .home-img1 {
+        max-width: 240px;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .home-img3 {
+        max-width: 200px;
+        top: 0;
+        right: 0;
+    }
+    
+    .home-img2 {
+        max-width: 230px;
+        top: 35%;
+        right: 4rem;
+        z-index: 11;
+    }
+    
+    .home__heading--h1 {
+        z-index: 333;
+    }
+    
+    .home__content {
+        margin-left: 20%;
+    }
+    
+    @media(max-width:990px)
+    /*Large screen*/
+    
+    {
+        /*home responsive*/
+        .home__content {
+            margin-left: 25%;
+        }
+        .home__heading--h1 {
+            font-size: 5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    
+    @media(max-width:892px) {
+        /*home responsive*/
+        .home {
+            padding: 0 1rem;
+        }
+        .home__content {
+            margin-left: 23%;
+        }
+        .home__heading--h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .home-img1 {
+            max-width: 200px;
+            top: 40%;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .home-img3 {
+            max-width: 170px;
+            top: 0;
+            right: 0;
+        }
+        .home-img2 {
+            max-width: 200px;
+            top: 40%;
+            right: 2rem;
+            z-index: 11;
+        }
+        .green {
+            right: 33px;
+            height: 530px;
+        }
+    }
+    
+    @media(max-width:775px) {
+        body {
+            padding: 0 1rem;
+        }
+        section {
+            padding: 3rem 1rem;
+        }
+        .container {
+            padding: 1rem 1rem;
+        }
+        .home__heading--h1 {
+            font-size: 4rem;
+        }
+        .home-img1 {
+            max-width: 180px;
+            top: 45%;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .home-img3 {
+            max-width: 170px;
+            top: 0;
+            right: 0;
+        }
+        .home-img2 {
+            max-width: 180px;
+            top: 45%;
+            right: 2rem;
+            z-index: 11;
+        }
+        .green {
+            right: 28px;
+            height: 515px;
+            width: 100px;
+        }
+        .home-content {
+            margin-left: 27%;
+        }
+    }
+    
+    @media(max-width:635px) {}
+    
+    @media(max-width:450px) {}
+    
+    @media(max-width:325px) {}
